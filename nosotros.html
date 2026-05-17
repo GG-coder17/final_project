@@ -4,78 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros | Tazita de Barro</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
-    <header>
-      <h1>Tazita de Barro</h1>
-      <nav aria-label="Principal">
-        <input
-          type="checkbox"
-          id="nav-toggle-checkbox"
-          class="nav-toggle-checkbox"
-        />
-        <label class="nav-toggle-button" for="nav-toggle-checkbox">Menú</label>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nuestra Historia</a></li>
-          <li><a href="index.html#servicios">Servicios</a></li>
-          <li><a href="index.html#menu">Menú Especial</a></li>
-          <li><a href="index.html#horarios">Horarios</a></li>
-          <li><a href="testimonios.html">Testimonios</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:px-3 focus:py-2 focus:bg-white focus:text-slate-900 focus:border focus:border-amber-700 rounded-lg"
+      >Saltar al contenido</a
+    >
+
+    <header
+      class="sticky top-0 z-30 border-b border-amber-800 bg-amber-700/95 backdrop-blur-xl shadow-lg"
+    >
+      <div
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 text-white sm:px-6"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight"
+          >Tazita de Barro</a
+        >
+        <nav aria-label="Navegación principal" class="w-full sm:w-auto">
+          <ul
+            class="flex flex-wrap justify-center gap-2 text-sm font-medium text-amber-100"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="nosotros.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Nuestra Historia</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#servicios"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#menu"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Menú Especial</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#horarios"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Horarios</a
+              >
+            </li>
+            <li>
+              <a
+                href="testimonios.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Testimonios</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contacto"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="main" role="main">
-      <section id="sobre-nosotros" class="about-hero">
-        <div class="about-hero-text">
-          <h2>Conoce la historia de Tazita de Barro</h2>
-          <p>
-            En <strong>Tazita de Barro</strong> no solo servimos café; creamos
-            un refugio para quienes buscan calidad, tranquilidad y conexiones
-            reales. Nuestra historia nace de una comunidad de caficultores,
-            baristas y creativos que compartimos la pasión por lo artesanal.
-          </p>
-          <p>
-            Somos un espacio donde la tradición se mezcla con propuestas
-            modernas, y cada detalle —desde la selección del grano hasta la
-            decoración— está pensado para que cada visita sea memorable.
-          </p>
+    <main id="main" class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <section
+        class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200"
+      >
+        <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p
+              class="text-sm uppercase tracking-[0.32em] text-amber-700 font-semibold"
+            >
+              Nuestra historia
+            </p>
+            <h1 class="mt-4 text-4xl font-extrabold text-slate-900 sm:text-5xl">
+              Tazita de Barro nació del amor por el café artesanal
+            </h1>
+            <p class="mt-6 text-slate-600 leading-8">
+              Creamos un refugio para quienes buscan calidad, tranquilidad y
+              conexiones reales. Cada detalle, desde el grano hasta la
+              decoración, está pensado para hacer de tu visita un momento
+              memorable.
+            </p>
+            <p class="mt-4 text-slate-600 leading-8">
+              Trabajamos con productores colombianos y celebramos lo local en
+              cada taza, ofreciendo un espacio donde la tradición y la
+              creatividad se encuentran.
+            </p>
+          </div>
+          <figure class="overflow-hidden rounded-[2rem] bg-slate-100 shadow-lg">
+            <img
+              src="https://picsum.photos/seed/nosotros2/900/540"
+              alt="Barista preparando café de especialidad con leche espumada"
+              class="h-full w-full object-cover"
+            />
+            <figcaption class="bg-white px-5 py-4 text-sm text-slate-600">
+              Baristas preparando café de especialidad en nuestro local.
+            </figcaption>
+          </figure>
         </div>
-        <figure class="about-hero-image">
-          <img
-            src="https://picsum.photos/seed/nosotros2/900/500"
-            alt="Barista preparando café de especialidad con leche espumada"
-          />
-          <figcaption>
-            Baristas preparando café de especialidad en nuestro local.
-          </figcaption>
-        </figure>
       </section>
 
-      <section class="about-grid">
-        <article class="about-card">
-          <h3>Nuestra misión</h3>
-          <p>
+      <section class="mt-10 grid gap-6 md:grid-cols-3">
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+        >
+          <h2 class="text-xl font-semibold text-slate-900">Nuestra misión</h2>
+          <p class="mt-3 text-slate-600 leading-7">
             Compartir sabores auténticos, promover el café de origen y ofrecer
-            un lugar acogedor donde cada cliente se sienta bienvenido y
-            valorado.
+            un lugar acogedor donde cada cliente se sienta bienvenido.
           </p>
         </article>
-        <article class="about-card">
-          <h3>Nuestra visión</h3>
-          <p>
-            Ser el café de referencia en la ciudad para quienes buscan calidad,
-            sostenibilidad y un ambiente perfecto para trabajo, descanso y
-            encuentro.
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+        >
+          <h2 class="text-xl font-semibold text-slate-900">Nuestra visión</h2>
+          <p class="mt-3 text-slate-600 leading-7">
+            Ser el café de referencia en Medellín para quienes buscan calidad,
+            sostenibilidad y un ambiente ideal para trabajo y encuentro.
           </p>
         </article>
-        <article class="about-card">
-          <h3>Nuestros valores</h3>
-          <ul>
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm"
+        >
+          <h2 class="text-xl font-semibold text-slate-900">Nuestros valores</h2>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-600">
             <li>Respeto por la tierra y el productor</li>
             <li>Calidad en cada taza</li>
             <li>Atención cercana y honesta</li>
@@ -84,47 +151,91 @@
         </article>
       </section>
 
-      <section class="about-story">
-        <h2>De la finca a tu taza</h2>
-        <p>
-          Trabajamos directamente con productores colombianos para garantizar
-          trazabilidad y frescura. Cada temporada revisamos lotes de cafés
-          especiales, apoyando prácticas responsables y ofreciendo sabores
-          únicos que se transforman en nuestras recetas.
-        </p>
-        <p>
-          En el café servimos bebidas clásicas y preparaciones exclusivas que
-          respetan la personalidad de cada grano. Además, apoyamos proyectos
-          culturales, música local y talleres que acercan a nuestra comunidad a
-          la experiencia del café.
-        </p>
+      <section
+        class="mt-10 rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200"
+      >
+        <div class="space-y-4">
+          <p
+            class="text-sm uppercase tracking-[0.32em] text-amber-700 font-semibold"
+          >
+            De la finca a tu taza
+          </p>
+          <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+            El proceso que hace única cada taza
+          </h2>
+          <p class="text-slate-600 leading-8">
+            Trabajamos directamente con productores colombianos para garantizar
+            trazabilidad y frescura. Cada temporada seleccionamos lotes
+            especiales y aplicamos prácticas responsables.
+          </p>
+          <p class="text-slate-600 leading-8">
+            En el café servimos bebidas clásicas y creaciones exclusivas que
+            respetan la personalidad de cada grano, y apoyamos proyectos
+            culturales que acercan a nuestra comunidad al café.
+          </p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <hr />
-      <h3>Tazita de Barro</h3>
-      <p>Carrera 76C #42-10, Barrio San Cristóbal, Medellín</p>
-      <p>Tel: <a href="tel:+1234567890">+1 234 567 890</a></p>
-      <p>
-        Email:
-        <a href="mailto:info@cafedelcentro.com">info@cafedelcentro.com</a>
-      </p>
-
-      <h3>Siguenos</h3>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-      </ul>
-
-      <p>
-        <small
-          >&copy; 2026 Tazita de Barro. Todos los derechos reservados.</small
-        >
-      </p>
+    <footer class="border-t border-slate-200 bg-slate-950 text-slate-200">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 sm:px-6 lg:px-8 lg:flex-row lg:justify-between"
+      >
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">Tazita de Barro</h3>
+          <p>Carrera 76C #42-10, Barrio San Cristóbal, Medellín</p>
+          <p>
+            Tel:
+            <a
+              class="text-amber-300 hover:text-amber-200"
+              href="tel:+57234567890"
+              >+57 234 567 890</a
+            >
+          </p>
+          <p>
+            Email:
+            <a
+              class="text-amber-300 hover:text-amber-200"
+              href="mailto:info@tazitadebarro.com"
+              >info@tazitadebarro.com</a
+            >
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">Síguenos</h3>
+          <ul class="flex flex-wrap gap-4 text-sm text-amber-200">
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-slate-800 bg-slate-950/80 px-4 py-4 text-center text-sm text-slate-500 sm:px-6"
+      >
+        &copy; 2026 Tazita de Barro. Todos los derechos reservados.
+      </div>
     </footer>
   </body>
 </html>

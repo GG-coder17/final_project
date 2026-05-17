@@ -4,135 +4,265 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonios | Tazita de Barro</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
-    <header>
-      <h1>Tazita de Barro</h1>
-      <nav aria-label="Principal">
-        <input
-          type="checkbox"
-          id="nav-toggle-checkbox"
-          class="nav-toggle-checkbox"
-        />
-        <label class="nav-toggle-button" for="nav-toggle-checkbox">Menú</label>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nuestra Historia</a></li>
-          <li><a href="index.html#servicios">Servicios</a></li>
-          <li><a href="index.html#menu">Menú Especial</a></li>
-          <li><a href="index.html#horarios">Horarios</a></li>
-          <li><a href="testimonios.html">Testimonios</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:px-3 focus:py-2 focus:bg-white focus:text-slate-900 focus:border focus:border-amber-700 rounded-lg"
+      >Saltar al contenido</a
+    >
+
+    <header
+      class="sticky top-0 z-30 border-b border-amber-800 bg-amber-700/95 backdrop-blur-xl shadow-lg"
+    >
+      <div
+        class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 text-white sm:px-6"
+      >
+        <a href="index.html" class="text-2xl font-extrabold tracking-tight"
+          >Tazita de Barro</a
+        >
+        <nav aria-label="Navegación principal" class="w-full sm:w-auto">
+          <ul
+            class="flex flex-wrap justify-center gap-2 text-sm font-medium text-amber-100"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="nosotros.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Nuestra Historia</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#servicios"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#menu"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Menú Especial</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#horarios"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Horarios</a
+              >
+            </li>
+            <li>
+              <a
+                href="testimonios.html"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Testimonios</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contacto"
+                class="rounded-full px-4 py-2 transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="main" role="main">
-      <section id="testimonios">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
+    <main id="main" class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <section
+        class="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200"
+      >
+        <div class="text-center">
+          <p
+            class="text-sm uppercase tracking-[0.32em] text-amber-700 font-semibold"
+          >
+            Testimonios
+          </p>
+          <h1 class="mt-4 text-4xl font-extrabold text-slate-900 sm:text-5xl">
+            Lo que nuestros clientes dicen de nosotros
+          </h1>
+          <p class="mt-4 text-slate-600 sm:text-lg">
+            Una comunidad que disfruta del café, el ambiente y el servicio
+            cercano en cada visita.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
             <img
               src="https://picsum.photos/seed/testimonio1/500/350"
               alt="Retrato de cliente en el café"
+              class="h-56 w-full object-cover"
             />
-            <div class="testimonial-content">
-              <p>
+            <div class="p-6">
+              <p class="text-slate-700">
                 "Cada visita es una experiencia distinta: el café está siempre
                 fresco, el lugar es acogedor y el servicio me hace sentir como
                 en casa."
               </p>
-              <footer><strong>Laura Gómez</strong>, diseñadora gráfica</footer>
+              <p class="mt-4 text-sm font-semibold text-slate-900">
+                Laura Gómez
+              </p>
+              <p class="text-sm text-slate-600">Diseñadora gráfica</p>
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
             <img
               src="https://picsum.photos/seed/testimonio2/500/350"
               alt="Mesa con café y pastel"
+              class="h-56 w-full object-cover"
             />
-            <div class="testimonial-content">
-              <p>
+            <div class="p-6">
+              <p class="text-slate-700">
                 "La repostería es deliciosa y siempre encuentro opciones nuevas.
                 El ambiente tranquilo me ayuda a concentrarme en mis reuniones."
               </p>
-              <footer><strong>Carlos Ríos</strong>, gestor de eventos</footer>
+              <p class="mt-4 text-sm font-semibold text-slate-900">
+                Carlos Ríos
+              </p>
+              <p class="text-sm text-slate-600">Gestor de eventos</p>
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
             <img
               src="https://picsum.photos/seed/testimonio3/500/350"
               alt="Cliente trabajando con laptop"
+              class="h-56 w-full object-cover"
             />
-            <div class="testimonial-content">
-              <p>
+            <div class="p-6">
+              <p class="text-slate-700">
                 "El espacio coworking es ideal para mis mañanas. Buena conexión
                 y un café que siempre me da energía para seguir."
               </p>
-              <footer><strong>Paula Santos</strong>, freelance</footer>
+              <p class="mt-4 text-sm font-semibold text-slate-900">
+                Paula Santos
+              </p>
+              <p class="text-sm text-slate-600">Freelance</p>
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
             <img
               src="https://picsum.photos/seed/testimonio4/500/350"
               alt="Cata de café con clientes"
+              class="h-56 w-full object-cover"
             />
-            <div class="testimonial-content">
-              <p>
+            <div class="p-6">
+              <p class="text-slate-700">
                 "Las catas son un descubrimiento constante. Aprendí a distinguir
                 aromas y sabores que no imaginaba en un café de la ciudad."
               </p>
-              <footer>
-                <strong>Javier Morales</strong>, sommelier aficionado
-              </footer>
+              <p class="mt-4 text-sm font-semibold text-slate-900">
+                Javier Morales
+              </p>
+              <p class="text-sm text-slate-600">Sommelier aficionado</p>
             </div>
           </article>
 
-          <article class="testimonial-card">
+          <article
+            class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
             <img
               src="https://picsum.photos/seed/testimonio5/500/350"
               alt="Amigos disfrutando café juntos"
+              class="h-56 w-full object-cover"
             />
-            <div class="testimonial-content">
-              <p>
+            <div class="p-6">
+              <p class="text-slate-700">
                 "Venimos cada semana con mi grupo de amigos. La atención es
                 cercana y el menú siempre tiene algo especial que recomendar."
               </p>
-              <footer><strong>María López</strong>, consultora</footer>
+              <p class="mt-4 text-sm font-semibold text-slate-900">
+                María López
+              </p>
+              <p class="text-sm text-slate-600">Consultora</p>
             </div>
           </article>
         </div>
       </section>
     </main>
 
-    <footer>
-      <hr />
-      <h3>Tazita de Barro</h3>
-      <p>Carrera 76C #42-10, Barrio San Cristóbal, Medellín</p>
-      <p>Tel: <a href="tel:+1234567890">+1 234 567 890</a></p>
-      <p>
-        Email:
-        <a href="mailto:info@cafedelcentro.com">info@cafedelcentro.com</a>
-      </p>
-
-      <h3>Siguenos</h3>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-      </ul>
-
-      <p>
-        <small
-          >&copy; 2026 Tazita de Barro. Todos los derechos reservados.</small
-        >
-      </p>
+    <footer class="border-t border-slate-200 bg-slate-950 text-slate-200">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 sm:px-6 lg:px-8 lg:flex-row lg:justify-between"
+      >
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">Tazita de Barro</h3>
+          <p>Carrera 76C #42-10, Barrio San Cristóbal, Medellín</p>
+          <p>
+            Tel:
+            <a
+              class="text-amber-300 hover:text-amber-200"
+              href="tel:+57234567890"
+              >+57 234 567 890</a
+            >
+          </p>
+          <p>
+            Email:
+            <a
+              class="text-amber-300 hover:text-amber-200"
+              href="mailto:info@tazitadebarro.com"
+              >info@tazitadebarro.com</a
+            >
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-white">Síguenos</h3>
+          <ul class="flex flex-wrap gap-4 text-sm text-amber-200">
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="transition hover:text-white"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-slate-800 bg-slate-950/80 px-4 py-4 text-center text-sm text-slate-500 sm:px-6"
+      >
+        &copy; 2026 Tazita de Barro. Todos los derechos reservados.
+      </div>
     </footer>
   </body>
 </html>
