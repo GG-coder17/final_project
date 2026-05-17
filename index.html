@@ -3,22 +3,467 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tazita de Barro | Café de Especialidad y Tradición</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- El Header contendrá el título principal (h1) y la navegación -->
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <!-- ENCABEZADO -->
     <header>
-      <!-- Aquí irá tu h1 y tu nav -->
+      <h1>Tazita de Barro</h1>
+      <nav aria-label="Principal">
+        <input
+          type="checkbox"
+          id="nav-toggle-checkbox"
+          class="nav-toggle-checkbox"
+        />
+        <label class="nav-toggle-button" for="nav-toggle-checkbox">Menú</label>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nuestra Historia</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="index.html#menu">Menú Especial</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- El Main contiene todo el contenido único de esta página -->
-    <main>
-      <!-- Aquí iremos creando nuestras secciones poco a poco -->
+    <main id="main" role="main">
+      <!-- SERVICIOS -->
+      <section id="servicios" class="services">
+        <div class="services-header">
+          <h2>Nuestros Servicios Destacados</h2>
+          <p>
+            En <strong>Tazita de Barro</strong> cuidamos cada detalle: desde la
+            selección de granos hasta la experiencia en sala. Descubre lo que
+            ofrecemos.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img
+              src="https://picsum.photos/seed/espresso/800/600"
+              alt="Taza de espresso"
+            />
+            <h3>Barista Expertos</h3>
+            <p>
+              Preparaciones de especialidad hechas por baristas certificados:
+              espresso, cortado, latte art y extracciones de precisión.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://picsum.photos/seed/pastries/800/600"
+              alt="Reposteria artesanal"
+            />
+            <h3>Repostería Artesanal</h3>
+            <p>
+              Pastelería fresca elaborada diariamente con ingredientes locales:
+              muffins, tartas y opciones sin gluten bajo pedido.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://picsum.photos/seed/cowork/800/600"
+              alt="Zona coworking"
+            />
+            <h3>Zona Coworking</h3>
+            <p>
+              Espacio cómodo y silencioso con enchufes, Wi‑Fi de alta velocidad
+              y tomas para largas jornadas de trabajo.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://picsum.photos/seed/events/800/600"
+              alt="Eventos y catas"
+            />
+            <h3>Eventos y Catas</h3>
+            <p>
+              Organizamos catas, talleres y eventos privados con menús
+              personalizados y soporte de nuestro staff.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://picsum.photos/seed/beans/800/600"
+              alt="Venta de granos"
+            />
+            <h3>Venta de Granos</h3>
+            <p>
+              Seleccionamos granos de pequeños productores: tueste porlot y
+              empaques para llevar en varios molidos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- MENU / TABLA DE PRECIOS -->
+      <section id="menu">
+        <h2>Nuestro Menu</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>
+              Precios de Bebidas - 2026
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Bebida</th>
+                <th scope="col">Pequeno</th>
+                <th scope="col">Mediano</th>
+                <th scope="col">Grande</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Espresso</td>
+                <td>$4.000</td>
+                <td>$5.000</td>
+                <td>$6.000</td>
+              </tr>
+              <tr>
+                <td>Cappuccino</td>
+                <td>$6.000</td>
+                <td>$7.000</td>
+                <td>$8.000</td>
+              </tr>
+              <tr>
+                <td>Latte</td>
+                <td>$6.500</td>
+                <td>$7.500</td>
+                <td>$8.500</td>
+              </tr>
+              <tr>
+                <td>Mocha</td>
+                <td>$7.000</td>
+                <td>$8.000</td>
+                <td>$9.000</td>
+              </tr>
+              <tr>
+                <td>Te artesanal</td>
+                <td>$4.000</td>
+                <td>$5.000</td>
+                <td>$6.000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  * Todos los precios incluyen IVA. Pregunta por nuestras
+                  promociones del dia.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!-- POSTRES -->
+      <section id="postres">
+        <h2>Postres</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>
+              Precios de Postres
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Postre</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cheesecake casero</td>
+                <td>$12.000</td>
+              </tr>
+              <tr>
+                <td>Brownie de chocolate</td>
+                <td>$8.000</td>
+              </tr>
+              <tr>
+                <td>Tarta de manzana</td>
+                <td>$10.000</td>
+              </tr>
+              <tr>
+                <td>Croissant relleno</td>
+                <td>$4.000</td>
+              </tr>
+              <tr>
+                <td>Helado artesanal (bola)</td>
+                <td>$3.500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- HORARIOS -->
+      <section id="horarios">
+        <h2>Horarios de Atencion</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>
+              Horarios de Atención
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Apertura</th>
+                <th scope="col">Cierre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes a Viernes</td>
+                <td>7:00 AM</td>
+                <td>9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sabados</td>
+                <td>8:00 AM</td>
+                <td>10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Domingos y festivos</td>
+                <td>9:00 AM</td>
+                <td>6:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section
+        id="contacto"
+        class="bg-white border border-gray-200 rounded-3xl p-8 shadow-xl"
+      >
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-8 text-center">
+            <p
+              class="text-sm uppercase tracking-[0.3em] text-amber-700 font-semibold"
+            >
+              Hablemos de tu próxima visita
+            </p>
+            <h2 class="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Reserva, cata o servicio especial
+            </h2>
+            <p class="mt-3 text-sm text-slate-600 sm:text-base">
+              Cuéntanos qué necesitas y te apoyamos con una experiencia de café
+              personalizada en Medellín.
+            </p>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-[2fr_1fr]">
+            <form action="/enviar" method="POST" class="grid gap-6">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-nombre"
+                  >Nombre completo</label
+                >
+                <input
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  type="text"
+                  id="contact-nombre"
+                  name="nombre"
+                  required
+                  placeholder="María Pérez"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-email"
+                  >Correo electrónico</label
+                >
+                <input
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  placeholder="tu@correo.com"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-tel"
+                  >Teléfono</label
+                >
+                <input
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  type="tel"
+                  id="contact-tel"
+                  name="telefono"
+                  placeholder="+57 300 123 4567"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-asunto"
+                  >Tipo de solicitud</label
+                >
+                <select
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  id="contact-asunto"
+                  name="asunto"
+                  required
+                >
+                  <option value="">Selecciona una opción</option>
+                  <option value="reservacion">Reservación de mesa</option>
+                  <option value="evento">Evento privado</option>
+                  <option value="catering">Servicio de catering</option>
+                  <option value="cata">Cata de café</option>
+                  <option value="otro">Otra consulta</option>
+                </select>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-fecha"
+                  >Fecha preferida</label
+                >
+                <input
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  type="date"
+                  id="contact-fecha"
+                  name="fecha"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-personas"
+                  >Personas</label
+                >
+                <input
+                  class="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  type="number"
+                  id="contact-personas"
+                  name="personas"
+                  min="1"
+                  max="30"
+                  placeholder="10"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-sm font-semibold text-slate-700"
+                  for="contact-mensaje"
+                  >Cuéntanos tu plan</label
+                >
+                <textarea
+                  class="min-h-[160px] w-full rounded-3xl border border-slate-300 bg-slate-50 px-4 py-4 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-4 focus:ring-amber-100"
+                  id="contact-mensaje"
+                  name="mensaje"
+                  required
+                  placeholder="¿Quieres una reservación tranquila, una cata privada o un pedido para llevar?"
+                ></textarea>
+              </div>
+
+              <label class="flex items-center gap-3 text-sm text-slate-700">
+                <input
+                  class="h-5 w-5 rounded border-slate-300 text-amber-600 focus:ring-amber-500"
+                  type="checkbox"
+                  id="contact-terminos"
+                  name="terminos"
+                  required
+                />
+                Acepto la política de privacidad y recibir novedades sobre
+                eventos.
+              </label>
+
+              <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
+                <button
+                  class="rounded-3xl bg-amber-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-700 focus:outline-none focus:ring-4 focus:ring-amber-200"
+                  type="submit"
+                >
+                  Enviar solicitud
+                </button>
+                <button
+                  class="rounded-3xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus:outline-none focus:ring-4 focus:ring-amber-100"
+                  type="reset"
+                >
+                  Limpiar formulario
+                </button>
+              </div>
+            </form>
+
+            <aside
+              class="rounded-3xl border border-amber-100 bg-amber-50 p-6 text-slate-700 shadow-sm"
+            >
+              <p
+                class="text-sm uppercase tracking-[0.3em] text-amber-700 font-semibold"
+              >
+                Servicio exprés
+              </p>
+              <h3 class="mt-4 text-2xl font-bold text-slate-900">
+                Planifica tu experiencia
+              </h3>
+              <p class="mt-3 text-sm leading-7">
+                Si deseas, te ayudamos con una mesa para trabajo, reunión de
+                amigos o cata privada. También puedes pedir café en grano
+                tostado el mismo día.
+              </p>
+              <ul class="mt-5 space-y-3 text-sm text-slate-700">
+                <li>✔ Atención para grupos de hasta 30 personas</li>
+                <li>✔ Reservas para mañana o fin de semana</li>
+                <li>✔ Menú dulce y salado disponible</li>
+              </ul>
+              <p class="mt-5 text-sm font-semibold text-slate-900">Nuevo:</p>
+              <p class="text-sm text-slate-700">
+                Pide tu recomendación personalizada y te confirmamos el mejor
+                horario en menos de 2 horas.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- El Footer para contacto y links legales -->
+    <!-- PIE DE PAGINA -->
     <footer>
-      <!-- Aquí usaremos la etiqueta <address> más adelante -->
+      <hr />
+      <h3>Tazita de Barro</h3>
+      <p>Carrera 76C #42-10, Barrio San Cristóbal, Medellín</p>
+      <p>Tel: <a href="tel:+57234567890">+57 234 567 890</a></p>
+      <p>
+        Email:
+        <a href="mailto:info@tazitadebarro.com">info@tazitadebarro.com</a>
+      </p>
+
+      <h3>Siguenos</h3>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+
+      <p>
+        <small
+          >&copy; 2026 Tazita de Barro. Todos los derechos reservados.</small
+        >
+      </p>
     </footer>
   </body>
 </html>
